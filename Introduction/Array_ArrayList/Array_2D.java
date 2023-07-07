@@ -1,8 +1,5 @@
 package Introduction.Array_ArrayList;
-
-import java.util.Arrays;
 import java.util.Scanner;
-
 public class Array_2D {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -13,6 +10,11 @@ public class Array_2D {
             }
         }
         sc.close();
-        System.out.println(Arrays.toString(arr));
+        for(int[] c:arr){
+            for(int e: c){
+                System.out.print(e+" ");
+            }
+            System.out.println();
+        }
     }
 }
